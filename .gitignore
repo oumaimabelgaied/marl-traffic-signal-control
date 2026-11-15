@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Generated simulation outputs (keep scripts and selected CSV summaries)
+# Review these rules before committing results you want to publish.
+results/**/tripinfo_*.xml
+results/**/tripinfo*.xml
+results/**/events*.xml
+results/**/fcd*.xml
+results/**/emissions*.xml
+*.log
+
+# LaTeX generated files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+
+# Large model checkpoints: decide whether to use Git LFS or external storage
+# Uncomment if checkpoints should stay out of normal Git history:
+# *.pth
+# *.pt
+
+# Temporary SUMO files
+trips.trips.xml
+
+# Unused experimental SUMO files
+SUMO/networks/test2.net.xml
+SUMO/networks/test2_actuated.net.xml
+SUMO/networks/3x3grid/3x3_test.net.xml
+SUMO/networks/3x3grid/3x3_final_test.net.xml
+SUMO/routes/test2.rou.xml
+
+# Temporary test output
+/results/test_tripinfo.xml
+
+# Superseded experiments
+/results/idqn_2x2/
+/results/idqn_2x2_smoke_test/
+/results/evaluation_idqn_vs_fixed/
+/results/evaluation_idqn_3x3/
+/results/models/
+/results/metrics/
+/results/plots/
+
+# Legacy root-level results
+/results/*.csv
+/results/tripinfo_*.xml
+/results/2x2_check.*
+/results/2x2_statistics.xml

@@ -1,0 +1,11 @@
+# Python: 3.13.7
+# SUMO: 1.28.0 (external installation)
+
+sumo-rl==1.4.5
+traci==1.28.0
+sumolib==1.28.0
+torch==2.15.0
+numpy==2.5.4
+pandas==3.1.1
+gymnasium==1.4.0
+pettingzoo==1.27.0
